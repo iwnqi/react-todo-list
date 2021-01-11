@@ -1,0 +1,16 @@
+.todoListHeader {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+.todoListHeader h1 {
+  margin: 0 30px 10px 0;
+  font-weight: 700;
+}
+.listStatus {
+  color: gray;
+  font-size: large;
+  font-weight: 700;
+}

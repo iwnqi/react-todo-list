@@ -1,0 +1,58 @@
+.searchPanel {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.searchPanel input {
+  width: 55%;
+  border-radius: 5px;
+  height: 100%;
+  border-color: gray;
+  background-color: black;
+  color: white;
+}
+.searchPanel input:focus {
+  outline: none;
+  color: gray;
+  background-color: white;
+}
+.searchPanelBtns {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: stretch;
+}
+.searchPanelBtns button {
+  color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-color: gray;
+}
+.searchPanelBtns button.active {
+  background-color: rgb(42, 54, 105);
+  color: white;
+}
+.searchPanelBtns button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.searchPanelBtns button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.searchPanelBtns button:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 1px rgb(42, 54, 105);
+
+  border-radius: 0 5px 5px 0;
+}
+
+.searchPanelBtns button:first-child:focus {
+  border-radius: 5px 0 0 5px;
+}
+.searchPanelBtns button:nth-child(2):focus {
+  border-radius: 0;
+}

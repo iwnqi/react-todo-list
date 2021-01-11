@@ -1,0 +1,38 @@
+.listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+}
+.listItem.done .listItemLabel {
+  text-decoration: line-through;
+}
+.listItem.important .listItemLabel {
+  color: rgb(112, 51, 211);
+  font-weight: 700;
+}
+.listItem button {
+  width: 35px;
+  background-color: rgb(42, 54, 105);
+  color: tomato;
+  border-radius: 5px;
+  border-color: tomato;
+  padding: 3px 8px 3px;
+}
+.listItem button:last-child {
+  color: green;
+  margin-left: 8px;
+  border-color: green;
+}
+
+.listItem button:focus {
+  outline: none;
+}
+.listItem button:active {
+  background-color: tomato;
+  color: white;
+}
+.listItem button:active:last-child {
+  background-color: green;
+}

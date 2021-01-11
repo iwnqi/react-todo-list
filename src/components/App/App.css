@@ -1,0 +1,8 @@
+.todoContainer {
+  width: 100%;
+  display: flex;
+}
+.mainTodoList {
+  width: 500px;
+  margin: 70px auto;
+}
